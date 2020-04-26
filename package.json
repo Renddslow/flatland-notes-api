@@ -8,7 +8,9 @@
   "author": "Matt McElwee <mubatt@wyopub.com>",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "gcr:build": "gcloud builds submit --tag gcr.io/flatland-api/notes-api",
+    "gcr:deploy": "gcloud run deploy notes-api --image gcr.io/flatland-api/notes-api --platform managed --allow-unauthenticated --region=us-central1"
   },
   "husky": {
     "hooks": {

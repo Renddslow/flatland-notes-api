@@ -78,6 +78,7 @@ polka()
     };
 
     messenger.messages.send({ message });
+    console.log(`Notes sent!`);
 
     res.end();
   })
