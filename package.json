@@ -29,8 +29,12 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
+    "catchify": "^2.6.1",
+    "date-fns": "^2.12.0",
     "dot-prop": "^5.2.0",
+    "dotenv": "^8.2.0",
     "got": "^11.0.2",
+    "mandrill-api": "^1.0.45",
     "polka": "^0.5.2",
     "qs": "^6.9.3"
   }
