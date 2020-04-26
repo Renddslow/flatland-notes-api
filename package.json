@@ -6,8 +6,10 @@
   "repository": "https://github.com/Renddslow/flatland-notes-api",
   "license": "MIT",
   "author": "Matt McElwee <mubatt@wyopub.com>",
-  "main": "index.js",
-  "scripts": {},
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -24,5 +26,12 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.1.7",
     "prettier": "^2.0.5"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dot-prop": "^5.2.0",
+    "got": "^11.0.2",
+    "polka": "^0.5.2",
+    "qs": "^6.9.3"
   }
 }
