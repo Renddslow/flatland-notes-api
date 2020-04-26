@@ -1,22 +1,28 @@
 {
-	"name": "flatland-notes-api",
-	"version": "0.0.0",
-	"private": false,
-	"description": "Webhook handler for sermon notes from PCO.",
-	"repository": "https://github.com/Renddslow/flatland-notes-api",
-	"license": "MIT",
-	"author": "Matt McElwee <mubatt@wyopub.com>",
-	"main": "index.js",
-	"scripts": {},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
-	},
-	"lint-staged": {
-		"*.{js,css,json,md,ts,tsx}": [
-			"prettier --write"
-		]
-	},
-	"prettier": "@dmsi/prettier-config"
+  "name": "flatland-notes-api",
+  "version": "0.0.0",
+  "private": false,
+  "description": "Webhook handler for sermon notes from PCO.",
+  "repository": "https://github.com/Renddslow/flatland-notes-api",
+  "license": "MIT",
+  "author": "Matt McElwee <mubatt@wyopub.com>",
+  "main": "index.js",
+  "scripts": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,json,md,ts,tsx}": [
+      "prettier --write"
+    ]
+  },
+  "prettier": "@dmsi/prettier-config",
+  "devDependencies": {
+    "@dmsi/prettier-config": "^1.3.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.7",
+    "prettier": "^2.0.5"
+  }
 }
